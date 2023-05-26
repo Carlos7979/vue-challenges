@@ -4,12 +4,46 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="shortcut icon" href="./weather-clear.png" type="image/x-icon">
 	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 	<script defer src="app.js"></script>
-	<link rel="shortcut icon" href="./weather-clear.png" type="image/x-icon">
 	<title>Contador</title>
 </head>
 <body>
-	<div id="app"></div>
+	<div id="app">
+		<div>
+			<div class="header">
+				<div class="header-container">
+					<img class="header-element" :src="vueImg" :width="vueW" alt="Vue">
+					<h1 class="header-element">{{title}}</h1>
+					<img class="header-element" :src="coderImg" :width="coderW" alt="Coder">
+				</div>
+			</div>
+			<div class="main">
+				<div class="counter-container">
+					<button @click="minus" class="counter-element">Resta</button>
+					<span class="counter-element">{{counter}}</span>
+					<button @click="add" class="counter-element">Suma</button>
+				</div>
+				<div class="info-data">
+					<ul class="info">
+						<li>Nombre: </li>
+						<li>Profesor:</li>
+						<li>Tutor: </li>
+						<li>Curso: </li>
+						<li>Comisión: </li>
+					</ul>
+					<ul class="data">
+						<li><strong v-text="student"></strong></li>
+						<li><strong v-text="teacher"></strong></li>
+						<li><strong v-text="tutor"></strong></li>
+						<li><strong v-text="subject"></strong></li>
+						<li><strong v-text="commission"></strong></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
