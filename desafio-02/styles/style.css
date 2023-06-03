@@ -1,0 +1,92 @@
+body {
+	background: whitesmoke;
+}
+
+ul {
+	list-style: none;
+}
+
+.header {
+	background: gold;
+	margin: 0 auto;
+}
+
+.header-container {
+	width: max-content;
+	margin: 0 auto;
+}
+
+.header-element {
+	display: inline-block;
+	margin: auto 10px;
+}
+
+.main {
+	background: silver;
+	height: 100vh;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+.buttons-container {
+	border: solid 1px;
+	border-radius: 5px;
+	width: fit-content;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: larger;
+	background-color: cornflowerblue;
+	margin: 0 auto;
+}
+
+.buttons-element {
+	margin: 5px 10px;
+}
+
+.info-data {
+	width: max-content;
+	margin: 5px auto;
+	display: flex;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	line-height: 1.5;
+}
+
+.data {
+	padding-left: 0.5rem;
+}
+
+.component-table-container {
+	display: flex;
+}
+
+.table-container {
+	margin: 20px auto;
+	width: fit-content;
+}
+
+.table-title {
+	text-align: center;
+}
+
+.header-table {
+	background: gold;
+	margin: 0 auto;
+}
+
+.header-purple {
+	background: slateblue;
+	color: cornsilk;
+	border: 1px solid black !important;
+}
+
+th, td {
+	border: 1px solid !important;
+	padding: 0 10px;
+	text-align: center;
+}
