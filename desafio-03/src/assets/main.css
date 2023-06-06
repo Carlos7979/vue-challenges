@@ -1,0 +1,60 @@
+body {
+	background: whitesmoke;
+}
+
+ul {
+	list-style: none;
+}
+
+.main {
+	background: silver;
+	height: 100vh;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+.buttons-container {
+	border: solid 1px;
+	border-radius: 5px;
+	width: fit-content;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: larger;
+	background-color: cornflowerblue;
+	margin: 0 auto;
+}
+
+.buttons-element {
+	margin: 5px 10px;
+}
+
+.component-table-container {
+	display: flex;
+}
+
+.table-container {
+	margin: 20px auto;
+	width: fit-content;
+}
+
+.table-title {
+	text-align: center;
+}
+
+.header-table {
+	background: gold;
+	margin: 0 auto;
+}
+
+.header-purple {
+	background: slateblue;
+	color: cornsilk;
+	border: 1px solid black !important;
+}
+
+th, td {
+	border: 1px solid !important;
+	padding: 0 10px;
+	text-align: center;
+}
