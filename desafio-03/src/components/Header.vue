@@ -1,12 +1,12 @@
 <script>
-	import vueImg from './vue.png'
-	import coderImg from './coderhouse.png'
+	import vueImg from './icons/vue.png'
+	import coderImg from './icons/coderhouse.png'
 	export default {
 	componentes: {},
 	props: {},
 	data () {
 		return {
-			title: 'Desafío 03 | Vite',
+			title: 'Desafío 03 | CDN a Vite',
             coderImg,
             coderW: 50,
             vueImg,

@@ -6,7 +6,7 @@
 	data () {
 		return {
 			student: 'Carlos Corredor',
-            teacher: 'Brian Cuenca',
+            teacher: 'Félix Blanco',
             tutor: 'Christian Gigena',
             subject: 'Vue JS',
             commission: '40500',

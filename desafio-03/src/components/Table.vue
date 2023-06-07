@@ -47,4 +47,31 @@
 		</table>
 	</div>
 </template>
-<style scoped></style>
+<style scoped>
+	.table-container {
+		margin: 20px auto;
+		width: fit-content;
+	}
+
+	.table-title {
+		text-align: center;
+	}
+
+	th,
+	td {
+		border: 1px solid;
+		padding: 0 10px;
+		text-align: center;
+	}
+
+	.header-table {
+		background: gold;
+		margin: 0 auto;
+	}
+
+	.header-purple {
+		background: slateblue;
+		color: cornsilk;
+		border: 1px solid black !important;
+	}
+</style>

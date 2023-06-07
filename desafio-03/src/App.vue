@@ -1,9 +1,28 @@
 <script>
-	import HelloWorld from './components/HelloWorld.vue'
-	import TheWelcome from './components/TheWelcome.vue'
-	import Header from './components/Header/Header.vue'
+	import Header from './components/Header.vue'
 	import Info from './components/Info.vue'
 	import Table from './components/Table.vue'
+
+	const rows = [
+		{ row: ['a', 'b', 'c', 'd', 'e'] },
+		{ row: [31, 81, 15, 38, 99] },
+		{ row: [35, 28, 62, 12, 41] },
+		{ row: [73, 81, 13, 38, 0] }
+	]
+
+	const rows2 = [
+		{ row: ['a', 'b', 'c', 'd', 'e'] },
+		{ row: [5, 70, 84, 6, 2] },
+		{ row: [84, 79, 84, 21, 73] },
+		{ row: [28, 12, 71, 84, 4] }
+	]
+
+	const rows3 = [
+		{ row: ['a', 'b', 'c', 'd', 'e'] },
+		{ row: [97, 60, 91, 99, 73] },
+		{ row: [91, 81, 90, 37, 38] },
+		{ row: [92, 91, 20, 35, 28] }
+	]
 
 	export default {
 		components: {
@@ -17,24 +36,9 @@
 					'header-table': true,
 					'header-purple': false
 				},
-				rows: [
-					{ row: ['a', 'b', 'c', 'd', 'e'] },
-					{ row: [31, 81, 15, 38, 99] },
-					{ row: [35, 28, 62, 12, 41] },
-					{ row: [73, 81, 13, 38, 0] }
-				],
-				rows2: [
-					{ row: ['a', 'b', 'c', 'd', 'e'] },
-					{ row: [5, 70, 84, 6, 2] },
-					{ row: [84, 79, 84, 21, 73] },
-					{ row: [28, 12, 71, 84, 4] }
-				],
-				rows3: [
-					{ row: ['a', 'b', 'c', 'd', 'e'] },
-					{ row: [97, 60, 91, 99, 73] },
-					{ row: [91, 81, 90, 37, 38] },
-					{ row: [92, 91, 20, 35, 28] }
-				],
+				rows,
+				rows2,
+				rows3,
 				rowStyle: [
 					'background: white',
 					'background: gray',
@@ -81,30 +85,34 @@
 </template>
 
 <style scoped>
-	header {
-		line-height: 1.5;
+	.buttons-container {
+		border: solid 1px;
+		border-radius: 5px;
+		width: fit-content;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: larger;
+		background-color: cornflowerblue;
+		margin: 0 auto;
 	}
 
-	.logo {
-		display: block;
-		margin: 0 auto 2rem;
+	.buttons-element {
+		margin: 5px 10px;
 	}
 
-	@media (min-width: 1024px) {
-		header {
-			display: flex;
-			place-items: center;
-			padding-right: calc(var(--section-gap) / 2);
-		}
+	.component-table-container {
+		display: flex;
+	}
 
-		.logo {
-			margin: 0 2rem 0 0;
-		}
+	.header-table {
+		background: gold;
+		margin: 0 auto;
+	}
 
-		header .wrapper {
-			display: flex;
-			place-items: flex-start;
-			flex-wrap: wrap;
-		}
+	.header-purple {
+		background: slateblue;
+		color: cornsilk;
+		border: 1px solid black !important;
 	}
 </style>
