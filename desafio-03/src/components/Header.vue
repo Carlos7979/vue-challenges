@@ -33,11 +33,14 @@
 	.header {
 		background: gold;
 		margin: 0 auto;
+		padding: 10px 0;
 	}
 
 	.header-container {
 		width: max-content;
 		margin: 0 auto;
+		display: flex;
+		align-items: center;
 	}
 
 	.header-element {
