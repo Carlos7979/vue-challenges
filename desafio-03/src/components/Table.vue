@@ -1,6 +1,6 @@
 <script>
 	export default {
-		componentes: {},
+		components: {},
 		props: {
 			tableTitle: String,
 			headerClass: Object,

@@ -1,5 +1,5 @@
 export default {
-	componentes: {},
+	components: {},
 	props: {},
 	data () {
 		return {
